@@ -1,0 +1,933 @@
+/* --------------topbar-------------------- */
+#topbar{
+    width: 100%;
+    background:#f1f1f1;
+    border-bottom:1px solid #e2e2e2;
+}
+.wraper{
+    width: 960px;
+    height: 25px;
+    margin: 0 auto;
+}
+
+/* .topnav_left{
+    width: 156px;
+} */
+.topnav_left .aside{
+    position: relative;
+}
+.topnav_left .aside li{
+    float: left;
+    height: 25px;
+}
+.topnav_left .aside li:hover{
+    cursor: pointer;
+}
+.topnav_left .aside li a{
+    font-size: 12px;
+    line-height: 25px;
+    color:#666;
+    padding-left:12px;
+}
+.topnav_left #qrcode .phone::before{
+    content:"";
+    width: 12px;
+    height: 12px;
+    background:url(../img/topbar_sprite150428.png) ;
+    background-position: 0 0;
+    position: absolute;
+    top:7px;
+    left:0;
+}
+.topnav_left #qrcode:hover .phone::before{
+    background-position: 0 -20px;;
+}
+.topnav_left .aside li:nth-child(2):hover a::before{
+    background-position: 0 106px;;
+}
+.topnav_left .aside li:nth-child(2) a::before{
+    content:"";
+    width: 15px;
+    height: 12px;
+    background:url(../img/topbar_sprite150428.png) ;
+    background-position: 0 126px;
+    position: absolute;
+    top:6px;
+    left:74px;
+}
+.topnav_left .aside li:nth-child(3):hover a::before{
+    background-position: 0 59px;;
+}
+.topnav_left .aside li:nth-child(3) a::before{
+    content:"";
+    width: 15px;
+    height: 12px;
+    background:url(../img/topbar_sprite150428.png) ;
+    background-position: 0 79px;
+    position: absolute;
+    top:6px;
+    left:150px;
+}
+.topnav_left>.aside>li:nth-child(2) a{
+    font-size: 12px;
+    line-height: 25px;
+    color:#666;
+    padding-left:26px;
+}
+.topnav_left>.aside>li:nth-child(3) a{
+    font-size: 12px;
+    line-height: 25px;
+    color:#666;
+    padding-left:22px;
+}
+#qrcode>.inner_code{
+    display:none;
+    float: left;
+    width: 303px;
+    position: absolute;
+    top:26px;
+    left:0;
+    background:#Fff;
+    border:1px solid #e2e2e2;
+    z-index: 15;
+}
+
+#qrcode:hover .inner_code{
+    display:block;
+}
+.aside li:nth-child(2):hover .bizGroupBuy{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.aside li:nth-child(3):hover .kaifang{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.inner_code .code{
+    float: left;
+    width: 150px;
+    min-height: 170px;
+    padding: 5px 0;
+    background-color: #FFF;
+    border-right: 1px solid #E1E1E1;
+}
+.inner_code .code:nth-child(2){
+   
+    border-right: none;
+}
+.inner_code .code p{
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    margin-top:5px;
+}
+.inner_code .code img{
+    margin:2px 25px;
+}
+.inner_code .code span{
+    display: block;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
+
+.topnav_center{
+    float: right;
+}
+#usename1{
+    float: right;
+    height: 25px;
+    line-height: 25px;
+}
+#usename1 p{
+    float: left;
+    line-height: 25px;
+}
+#con{
+    display: inline-block;
+    font-size: 12px;
+    color:#666;
+}
+#quit{
+    display: inline-block;
+    font-size: 12px;
+    color:#666;
+    cursor: pointer;
+}
+.topnav_center .userpanel a{
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    display: inline;
+    margin:0 5px;
+}
+.topnav_center .userpanel a:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+.topnav_center .userpanel b{
+    display: inline;
+    font-size: 12px;
+    /* margin-bottom:5px; */
+    text-align: center;
+}
+#spWelcome{
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    display: inline;
+}
+
+.topnav_right{
+    float: right;
+}
+.topnav_right>.aside>li{
+    float: left;
+}
+#miniPayCountDown{
+    width: 84px;
+    height: 25px;
+    font-size: 12px;
+    color:#333;
+    line-height: 25px;
+    text-align: center;
+    margin-left:10px;
+    position: relative;
+}
+#miniPayCountDown::after{
+    content:"";
+    position: absolute;
+    top:10px;
+    right:5px;
+    width: 8px;
+    height: 4px;
+    background:url(../img/top3.png);
+}
+#miniPayCountDown:hover{
+    background:#fff;
+    border-bottom: none;
+}
+#miniPayCountDown .inner{
+    position: absolute;
+    width: 110px;
+    line-height: 35px;
+    height: 35px;
+    background: #FFF;
+    right:0;
+    top:24px;
+    box-shadow:  1px 1px 1px 0 #666;
+}
+#miniPayCountDown .inner .blue{
+    text-align: center;
+    margin:0 5px;
+    text-decoration-line: underline;
+}
+#miniMyNewegg {
+    width: 84px;
+    height: 25px;
+    font-size: 12px;
+    color:#333;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+}
+#miniMyNewegg::after{
+    content:"";
+    position: absolute;
+    top:10px;
+    right:5px;
+    width: 8px;
+    height: 4px;
+    background:url(../img/top3.png);
+}
+#miniMyNewegg:hover{
+    background:#fff;
+    border-bottom: none;
+}
+#miniMyNewegg .inner{
+    position: absolute;
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+    background: #FFF;
+    right:0;
+    top:24px;
+    box-shadow: 1px 1px 1px 0 #666;
+    z-index: 2;
+}
+
+#miniMyNewegg .inner .blue{
+    text-align: center;
+    margin:0 5px;
+    text-decoration-line: underline;
+}
+.topnav_right .aside li:nth-child(1){
+    width: 60px;
+    height: 25px;
+   margin: 0 2px;
+}
+.topnav_right .aside li:nth-child(1) a{
+    width: 48px;
+    height: 25px;
+    font-size: 12px;
+    color:#333;
+    line-height: 25px;
+    text-align: center;
+}
+.topnav_right .aside li:nth-child(1):hover a{
+    text-decoration-line: underline;
+}
+.topnav_right .aside li:nth-child(2){
+    width: 90px;
+    height: 25px;
+    float: left;
+    position: relative;
+}
+.topnav_right .aside li:nth-child(2)::after{
+    content:"";
+    position: absolute;
+    top:10px;
+    right:10px;
+    width: 8px;
+    height: 4px;
+    background:url(../img/top3.png);
+}
+.topnav_right .aside li:nth-child(2):hover{
+    background:#fff;
+    border-bottom: none;
+}
+.topnav_right .aside li:nth-child(2) .oper{
+    padding: 0 25px 0 11px;
+    position: relative;
+    z-index: 1;
+}
+
+.hasub a,.hasub p{
+    font-size: 12px;
+    color:#333;
+    line-height: 25px;
+    text-align: center;
+}
+.hasub .inner{
+    display: none;
+}
+
+.hasub:hover .inner{
+    display: block;
+    background:#fff;
+}
+.topnav_right .aside li:nth-child(2) .inner{
+    position: absolute;
+    width: 140px;
+    height: 100px;
+    right:0;
+    top:24px;
+    text-align: center;
+    box-shadow: 1px 1px 1px 0 #666;
+    z-index: 3;
+}
+.topnav_right .aside li:nth-child(2) .inner .orange{
+    color:orange;
+    font-size: 14px;
+}
+.topnav_right .aside li:nth-child(2) .inner .connect_way{
+    text-align: center;
+    height: 40px;
+}
+
+.inner>.connect_way>.common_btn a{
+     float: left;
+    margin-left:5px;
+    background:blue;
+    width: 60px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #FFF;
+}
+/* -------------------- */
+#main{
+    width: 100%;
+}
+#main .top{
+    width: 980px;
+    height: 89px;
+    margin:0 auto;
+    background: #fff;
+}
+#main .top .banner{
+    width: 980px;
+    height: 69px;
+    padding:10px 0;
+}
+#main .top .banner a img{
+    float: left;
+    width: 320px;
+    height: 69px;
+}
+#main .top .banner span{
+    border-left: 1px solid #D9D9D9;
+    float: left;
+    font: 24px/49px microsoft yahei;
+    margin: 5px 0 0 25px;
+    padding-left: 26px;
+}
+#main .register{
+    width: 100%;
+    background: #f9f9f9;
+}
+#main .register .register_box{
+    width: 960px;
+    height: 492px;
+    margin:0 auto;
+}
+#main .register .register_box #step1{
+    width: 960px;
+    height: 492px;
+}
+#main .register .register_box #step1 .wraper{
+    width: 960px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color:#666;
+}
+#main .register .register_box #step1 .wraper .red{
+    font-size: 14px;
+    color:#f60;
+    line-height: 30px;
+    cursor: pointer;
+}
+#main .register .register_box #step1 .wraper:hover a{
+    text-decoration-line: underline;
+}
+#main .register .register_box #step1 .register_box{
+    width: 960px;
+    height: 460px;
+}
+#main .register .register_box #step1 .register_box .wraper{
+    width: 960px;
+    height: 218px;
+}
+#main .register .register_box #step1 .register_box .wraper .step0{
+    margin: 20px auto;
+    background: url(../img/register_step.png) no-repeat center;
+    width: 655px;
+    height: 30px;
+    background-position: 0 0;
+}
+#main .register .register_box #step1 .register_box .wraper .register_con{
+    width: 960px;
+    height: 148px;
+    position: relative;
+}
+#main .register .register_box #step1 .register_box .wraper .register_con .register_con_box{
+    width: 960px;
+    height: 32px;
+    text-align: left;
+    /* position: relative; */
+    margin-left:305px;
+    margin-bottom: 25px;
+}
+#main .register .register_box #step1 .register_box .wraper .register_con .code_btn_1{
+    position: absolute;
+    top:55px;
+    left:340px;
+}
+#main .register .register_box #step1 .register_box .wraper .register_con .register_con_box .input_usrname1{
+    position: absolute;
+    left:650px;
+    top:0
+}#main .register .register_box #step1 .register_box .wraper .register_con .register_con_box .input_usrname2{
+    position: absolute;
+    left:520px;
+    top:60px;
+}
+#main .register .register_box #step1 .register_box .wraper .register_con .register_con_box label{
+    display: inline-block;
+    width: 67px;
+    text-align: left;
+    cursor: default;
+    font-size: 12px;
+    line-height: 15px;
+    color:#484848;
+}
+#main .register .register_box #step1 .register_box .wraper .register_con .register_con_box #txtPhone{
+    height: 30px;
+    width: 255px;
+    line-height: 30px;
+    border: 1px solid #cfcfcf;
+    text-indent: 5px;
+    overflow: hidden;
+    background: #F9F9F9;
+}
+#main .register .register_box #step1 .register_box .wraper .register_con .register_con_box input{
+    height: 30px;
+    width: 130px;
+    line-height: 30px;
+    border: 1px solid #cfcfcf;
+    text-indent: 5px;
+    overflow: hidden;
+    background: #F9F9F9;
+}
+
+#main .register .register_box #step1 .register_box .wraper .register_con .register_con_box span .code_btn_0{
+    margin-left:80px;
+    width: 250px;
+    height: 32px;
+    font-size: 12px;
+    color:#666;
+    text-align: center;
+    line-height: 32px;
+    background: #e1e1e1;
+    border:1px solid #666;
+    cursor: pointer;
+}
+#main .register .register_box #step1 .register_box .wraper .register_con .register_con_box #idcode{
+    position: absolute;
+    top:55px;
+    left:540px;
+    width: 80px;
+    height: 32px;
+}
+#ehong-code-input{
+	width:42px;
+	letter-spacing:2px;
+	margin:0px 8px 0px 0px;
+}
+.ehong-idcode-val{
+	position:relative;
+	padding:1px 4px 1px 4px;
+	top:0px;
+	*top:-3px;
+	letter-spacing:4px;
+	display:inline;
+	cursor:pointer;
+	font-size:16px;
+	font-family:"Courier New", Courier, monospace;
+	text-decoration:none;
+	font-weight:bold;
+}
+.ehong-idcode-val0{
+	border:solid 1px #A4CDED;	
+	background-color:#ECFAFB;
+}
+
+.ehong-idcode-val1{
+	border:solid 1px #A4CDED;	
+	background-color:#FCEFCF;
+}
+.ehong-idcode-val2{
+	border:solid 1px #6C9;	
+	background-color:#D0F0DF;
+}
+.ehong-idcode-val3{
+	border:solid 1px #6C9;	
+	background-color:#DCDDD8;
+}
+.ehong-idcode-val4{
+	border:solid 1px #6C9;	
+	background-color:#F1DEFF;
+}
+.ehong-idcode-val5{
+	border:solid 1px #6C9;	
+	background-color:#ACE1F1;
+}
+.ehong-code-val-tip{
+	font-size:12px;
+	color:#1098EC;
+	top:0px;
+	*top:-3px;	
+	position:relative;	
+	margin:0px 0px 0px 4px;
+	cursor:pointer;	
+}
+#btnGetVaildataCode{
+    position: absolute;
+    width: 70px;
+    height: 32px;
+    top:115px;
+    left:520px;
+}
+#btnGetVaildataCode .input_usrname3{
+    position: absolute;
+    width: 50px;
+    height: 32px;
+    top:0;
+    left:70px;
+
+}
+/* #main .register .register_box #step1 .register_box .wraper .register_con .register_con_box .change_code{
+    position: absolute;
+    top:0;
+    left:300px;
+} */
+#main .register .register_box #step1 .register_box .wraper .register_con  #code_btn_1 .code_btn_1{
+    position: absolute;
+    top:115px;
+    left:520px;
+    width: 113px;
+    height: 28px;
+    font-size: 12px;
+    color:#666;
+    text-align: center;
+    line-height: 32px;
+    background: #e1e1e1;
+    border:1px solid #666;
+    cursor: pointer;
+}
+#main .register .register_box #step1 .register_box .wraper .register_con  #next_step_btn span .next_step_btn{
+    margin-left:80px;
+    position: absolute;
+    top:170px;
+    left:300px;
+    width: 250px;
+    height: 32px;
+    font-size: 16px;
+    color:#fff;
+    text-align: center;
+    line-height: 32px;
+    background: #f60;
+    border:1px solid #f60;
+    cursor: pointer;
+}
+#main .register .register_box #step2{
+    width: 960px;
+    height: 492px;
+}
+#main .register .register_box #step2 .wraper{
+    width: 960px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color:#666;
+}
+#main .register .register_box #step2 .wraper .red{
+    font-size: 14px;
+    color:#f60;
+    line-height: 30px;
+    cursor: pointer;
+}
+#main .register .register_box #step2 .wraper:hover a{
+    text-decoration-line: underline;
+}
+#main .register .register_box #step2 .register_box{
+    width: 960px;
+    height: 460px;
+}
+#main .register .register_box #step2 .register_box .wraper{
+    width: 960px;
+    height: 218px;
+}
+#main .register .register_box #step2 .register_box .wraper .step1{
+    margin: 20px auto;
+    background: url(../img/register_step.png) no-repeat center;
+    width: 655px;
+    height: 30px;
+    background-position: 0 -75px;
+}
+#main .register .register_box #step2 .register_box .wraper .register_con{
+    width: 960px;
+    height: 148px;
+    position: relative;
+}
+#main .register .register_box #step2 .register_box .wraper .register_con .register_con_box{
+    width: 960px;
+    height: 32px;
+    text-align: left;
+    position: relative;
+    margin-left:305px;
+    margin-bottom: 25px;
+}
+#main .register .register_box #step2 .register_box .wraper .register_con .register_con_box label{
+    display: inline-block;
+    width: 66px;
+    text-align: left;
+    cursor: default;
+    font-size: 12px;
+    line-height: 15px;
+    color:#484848;
+}
+#main .register .register_box #step2 .register_box .wraper .register_con .register_con_box input{
+    height: 30px;
+    width: 255px;
+    line-height: 30px;
+    border: 1px solid #cfcfcf;
+    text-indent: 5px;
+    overflow: hidden;
+    background: #F9F9F9;
+}
+#main .register .register_box #step2 .register_box .wraper .register_con .register_con_box .input_usrname4{
+    position: absolute;
+    left:350px;
+    top:0;
+}
+#main .register .register_box #step2 .register_box .wraper .register_con .register_con_box .input_usrname5{
+    position: absolute;
+    left:350px;
+    top:0;
+}
+#main .register .register_box #step2 .register_box .wraper .register_con .register_con_box span .code_btn_0{
+    margin-left:80px;
+    width: 250px;
+    height: 32px;
+    font-size: 12px;
+    color:#666;
+    text-align: center;
+    line-height: 32px;
+    background: #e1e1e1;
+    border:1px solid #666;
+    cursor: pointer;
+}
+#main .register .register_box #step2 .register_box .wraper .register_con .register_con_box #agree1{
+    width: 13px;
+    height: 13px;
+    border:1px solid #666;
+    margin-left:40px;
+}
+#main .register .register_box #step2 .register_box .wraper .register_con .register_con_box .agree{
+    font-size: 12px;
+    color:#666;
+    width: 230px;
+}
+#main .register .register_box #step2 .register_box .wraper .register_con .register_con_box .agree .agreement_box_btn{
+    font-size: 12px;
+    color:#f60;
+}
+#main .register .register_box #step2 .register_box .wraper .register_con .register_con_box span .next_step_btn{
+    margin-left:80px;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 250px;
+    height: 32px;
+    font-size: 16px;
+    color:#fff;
+    text-align: center;
+    line-height: 32px;
+    background: #f60;
+    border:1px solid #f60;
+    cursor: pointer;
+}
+#main .register .register_box #step3{
+    width: 960px;
+    height: 492px;
+}
+#main .register .register_box #step3 .wraper{
+    width: 960px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color:#666;
+}
+#main .register .register_box #step3 .wraper .red{
+    font-size: 14px;
+    color:#f60;
+    line-height: 30px;
+    cursor: pointer;
+}
+#main .register .register_box #step3 .wraper:hover .red{
+    text-decoration-line: underline;
+}
+#main .register .register_box #step3 .register_box{
+    width: 960px;
+    height: 460px;
+}
+#main .register .register_box #step3 .register_box .wraper{
+    width: 960px;
+    height: 218px;
+}
+#main .register .register_box #step3 .register_box .wraper .step2{
+    margin: 20px auto 30px auto;
+    background: url(../img/register_step.png) no-repeat center;
+    width: 655px;
+    height: 30px;
+    background-position: 0 -149px;
+}
+#main .register .register_box #step3 .register_box .wraper .register_con{
+    width: 960px;
+    height: 148px;
+    position: relative;
+}
+#main .register .register_box #step3 .register_box .wraper .register_con h2{
+    font-size: 16px;
+    color:#666;
+    line-height: 40px;
+    height: 40px;
+    margin-left:280px;
+}
+#main .register .register_box #step3 .register_box .wraper .register_con h2::before{
+    content:"";
+    width: 35px;
+    height: 35px;
+    background:url(../img/congratulate.png) no-repeat center;
+    position: absolute;
+    top:0;
+    left:245px;
+}
+#main .register .register_box #step3 .register_box .wraper .register_con .fri_link{
+    width: 325px;
+    height: 30px;
+    font-size: 14px;
+    color:#f60;
+    line-height: 30px;
+    margin-left:280px;
+}
+#main .register .register_box #step3 .register_box .wraper .register_con .fri_link:hover{
+    text-decoration-line: underline;
+}
+#main .register .register_box #step3 .register_box .wraper .register_con .e-mail_tip{
+    font-size: 12px;
+    color:#666;
+    line-height: 25px;
+    margin-left:280px;
+    margin-top:30px;
+}
+#main .register .register_box #step3 .register_box .wraper .register_con .e-mail_sec{
+    width: 455px;
+    height: 32px;
+    margin-top:10px;
+    margin-left:301px;
+}
+#main .register .register_box #step3 .register_box .wraper .register_con .e-mail_sec label{
+    font-size: 12px;
+    color:#666;
+    line-height: 32px;
+}
+#main .register .register_box #step3 .register_box .wraper .register_con .e-mail_sec label::before{
+    content:"";
+    width: 21px;
+    height: 15px;
+    background:url(../img/youxiang.png);
+    position: absolute;
+    top:173px;
+    left:280px;
+}
+#main .register .register_box #step3 .register_box .wraper .register_con .e-mail_sec input{
+    width: 253px;
+    height: 30px;
+    border:1px solid #666;
+}
+#main .register .register_box #step3 .register_box .wraper .register_con .e-mail_sec button{
+    margin-left:14px;
+    font-size: 14px;
+    line-height: 32px;
+    color:#fff;
+    background:#f60;
+    width: 90px;
+    height: 32px;
+    cursor: pointer;
+}
+#main .register .register_box #step3 .register_box .wraper .register_con .code_pic{
+    width: 167px;
+    height: 192px;
+    position: absolute;
+    top:10px;
+    right:-10px;
+}
+/* ----------------------底部-------------------- */
+#footer{
+    width: 100%;
+}
+#footer .index_footer{
+    width: 1200px;
+    height: 110px;
+}
+
+#footer .index_footer .footer{
+    width: 1200px;
+    height: 110px;
+    margin:40px auto 10px auto;
+    position: relative;
+}
+#footer .index_footer .footer a{
+    display: inline-block;
+    line-height: 45px;
+    background: #333
+}
+#footer .index_footer .footer .item2{
+    width: 38px;
+    height: 45px;
+    margin-left:120px;
+    background:url(../img/certi20150925.png) no-repeat center;
+    background-position: 0 -514px;
+}
+#footer .index_footer .footer .item1{
+    width: 123px;
+    height: 45px;
+    background:url(../img/certi20150925.png) no-repeat center;
+    background-position: 0 0;
+}
+#footer .index_footer .footer .item3{
+    width: 116px;
+    height: 45px;
+    background:url(../img/certi20150925.png) no-repeat center;
+    background-position: 0 -92px;
+}
+#footer .index_footer .footer .item7{
+    width: 130px;
+    height: 45px;
+    background:url(../img/certi20150925.png) no-repeat center;
+    background-position: 0 -276px;
+}
+#footer .index_footer .footer .item8{
+    width: 127px;
+    height: 45px;
+    background:url(../img/certi20150925.png) no-repeat center;
+    background-position: 0 -326px;
+}
+#footer .index_footer .footer .item9{
+    width: 106px;
+    height: 45px;
+    background:url(../img/certi20150925.png) no-repeat center;
+    background-position: 0 -376px;
+}
+#footer .index_footer .footer .item10{
+    width: 248px;
+    height: 45px;
+    background:url(../img/certi20150925.png) no-repeat center;
+    background-position: 0 -421px;
+}
+#footer .index_footer .footer p{
+    font-size: 12px;
+    color:#666;
+    line-height: 25px;
+    height: 25px;
+}
+#footer .index_footer .footer p a{
+    font-size: 12px;
+    background: #fff;
+}
+#footer .index_footer .footer .abefore{
+    position: absolute;
+    top:55px;
+    left:410px;
+    height: 25px;
+}
+#footer .index_footer .footer .aafter{
+    position: absolute;
+    top:85px;
+    left:380px;
+    height: 25px;
+}
+#footer .index_footer .footer .abefore a{
+    padding:0 5px;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+#footer .index_footer .footer p a:hover{
+    text-decoration-line: underline;
+}
+#footer .index_footer .footer .aafter span{
+    font-size: 12px;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    padding:0 5px;
+}
+#footer .index_footer .footer .aafter span a{
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+

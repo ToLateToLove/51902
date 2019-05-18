@@ -1,0 +1,433 @@
+#headerwraper{
+    width: 100%;
+    height: 136px;
+}
+#headerwraper .header{
+    width: 100%;
+    height: 136px;
+    border-bottom:1px solid #e6e6e6;
+}
+#headerwraper .header .topbar{
+    width: 980px;
+    height: 86px;
+    margin:25px auto;
+}
+#headerwraper .header .topbar #logo{
+    width: 319px;
+    height: 65px;
+    margin:10px 0;
+    float: left;
+}
+#headerwraper .header .topbar .topright{
+    float: right;
+    height: 86px;
+}
+#headerwraper .header .topbar .topright .topnav1{
+    height: 30px;
+    margin-top:10px;
+}
+#headerwraper .header .topbar .topright .topnav1 .username{
+    float: left;
+}
+#usename1{
+    float: right;
+    height: 25px;
+    line-height: 25px;
+}
+#usename1 p{
+    float: left;
+    line-height: 25px;
+}
+#con{
+    display: inline-block;
+    font-size: 12px;
+    color:#666;
+}
+#quit{
+    display: inline-block;
+    font-size: 12px;
+    color:#666;
+    cursor: pointer;
+}
+#headerwraper .header .topbar .topright .topnav1 .username #loginLink {
+    float: left;
+    height: 22px;
+}
+#headerwraper .header .topbar .topright .topnav1 .username #loginLink a{
+    font-size: 12px;
+    color:#666;
+    line-height: 12px;
+    padding:0 2px;
+}
+a:hover{
+    text-decoration-line: underline;
+}
+#headerwraper .header .topbar .topright .topnav1 .username #spWelcome{
+    font-size: 12px;
+    color:#666;
+    line-height: 22px;
+    float: left;
+}
+#headerwraper .header .topbar .topright .topnav1 .vm{
+    float: left;
+}
+#headerwraper .header .topbar .topright .topnav2{
+    height: 30px;
+    margin-top:10px;
+    float: right;
+    font-size: 12px;
+    color:#666;
+}
+#headerwraper .header .topbar .topright .topnav2 a{
+    font-size: 12px;
+    color:#666;
+}
+#headerwraper .stepmarkarea{
+    width: 980px;
+    margin:0 auto;
+    height: 54px;
+}
+#headerwraper .stepmarkarea .stepmark{
+    width: 237px;
+    height: 54px;
+    margin:0 44px;
+    text-align: center;
+    position: relative;
+}
+#headerwraper .stepmarkarea .stepmark span{
+    background:url(../img/sc_markicont20131021.jpg) no-repeat;
+    background-position:-4px -20px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top:-10px;
+    left:108px;
+}
+#headerwraper .stepmarkarea .currentstep span{
+    background-position: -4px 0;
+} 
+#headerwraper .stepmarkarea .stepmark div{
+    margin-top:15px;
+}
+#shopping{
+    width: 100%;
+    height: 500px;
+    margin-top:100px;
+}
+#shopping .shopping{
+    width: 960px;
+    margin:20px auto 0 auto;
+}
+#shopping .shopping .shopping-goods{
+    width: 958px;
+    border:1px solid #e6e6e6;
+    box-shadow: 1px 0 0  2px #e6e6e6;
+}
+#shopping .shopping .shopping-goods .title{
+    width: 958px;
+    height: 32px;
+    border-bottom:1px solid #e6e6e6;
+}
+#shopping .shopping .shopping-goods .title p{
+    padding-left:10px ;
+    font-size: 16px;
+    line-height: 32px;
+    color:#666;
+    font-weight: 600;
+    float: left;
+}
+#shopping .shopping .shopping-goods .title .may{
+    width: 781px;
+    border-right:1px solid #e6e6e6;
+}
+#shopping .shopping .shopping-goods .title .mpay{
+    width: 176px;
+    background:#FFFFCC;
+}
+#shopping .shopping .shopping-goods .contenter{
+    width: 958px;
+    clear: both;
+    display: inline-block;
+}
+#shopping .shopping .shopping-goods .contenter .content{
+    width: 780px;
+    border-right:1px solid #e6e6e6;
+    float: left;
+    display: inline-block;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay{
+    width: 176px;
+    /* background: #FFFFCC; */
+    /* border-left:1px solid #e6e6e6; */
+    float: left;
+    display: inline-block;
+    background:#FFFFCC;
+}
+#shopping .shopping .shopping-goods .contenter .content .cartMain_hd{
+    width: 781px;
+    height: 32px;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content{
+    width: 781px;
+    height: 100px;
+}
+#shopping .shopping .shopping-goods .contenter .content .cartMain_hd .cartTop{
+    width: 781px;
+    height: 32px;
+    line-height: 32px;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont{
+    width: 781px;
+    height: 100px;
+    margin-top:20px;
+    line-height: 100px;
+    border-bottom:1px solid #e6e6e6;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_lists li{
+    font-size: 12px;
+    color:#666;
+    float: left;
+}
+
+#shopping .shopping .shopping-goods .contenter .content .order_lists .list_chk{
+    width: 60px;
+    text-align: center;
+    padding-left:10px;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_lists .list_con{
+    width: 375px;
+    text-align: left;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_lists .list_price{
+    width: 100px;
+    text-align: center;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_lists .list_amount{
+    width: 70px;
+    text-align: center;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_lists .list_sum{
+    width: 95px;
+    text-align: center;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_lists .list_op{
+    width: 80px;
+    text-align: center;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_chk{
+    height: 100px;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_chk .son_check{
+    height: 80px;
+    text-align: center;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_con{
+    height: 100px;
+    float: left;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_con .list_img{
+    width: 80px;
+    height: 60px;
+    float: left;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_con .list_text{
+    /* height: 42px; */
+    float: left;
+    width: 285px;
+    margin-left:10px;
+    line-height: 18px;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_con .list_text .funcLink{
+    font-size: 12px;
+    color:#666;
+    line-height: 14px;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_price{
+    height: 100px;
+    text-align: center;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_price .price{
+    font-size: 14px;
+    color:#666;
+    line-height: 40px;
+    margin:30px 0;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_amount{
+    height: 100px;
+    width: 70px;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_amount .amount_box{
+    height: 24px;
+    margin-left:6px;
+    margin-top:30px;
+    float: left;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_amount .amount_box .sum{
+    width: 38px;
+    height: 24px;
+    font-size: 12px;
+    color:#666;
+    text-align: center;
+    line-height: 24px;
+    border:1px solid #e6e6e6;
+    float: left;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_amount .limitcount{
+    width: 70px;
+    height: 14px;
+    line-height: 14px;
+    margin-top:10px;
+    font-size: 12px;
+    color:#666;
+    float: left;
+}
+#shopping .shopping .shopping-goods .order_content .order_lists .list_amount .amount_box .jiajian{
+    width: 13px;
+    margin-left:2px;
+    height: 24px;
+    float: left;
+}
+#shopping .shopping .shopping-goods .order_content .order_lists .list_amount .amount_box .jiajian a{
+    width: 13px;
+    float: left;
+    /* height: 10px; */
+    text-align: center;
+    color:#666;
+    font-size: 8px;
+    line-height: 10px;
+    border:1px solid #e6e6e6;
+}
+
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_sum .sum_price{
+    font-size: 14px;
+    color:#f60;
+    line-height: 40px;
+    margin:30px 0;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_op .caozuo{
+    margin-top:30px;
+    text-align: right;
+    height: 50px;
+    margin-right:10px;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_op .caozuo p{
+    line-height: 25px;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_op .caozuo .del a{
+    font-size: 14px;
+    color:#1c459d;
+    line-height: 25px;
+}
+#shopping .shopping .shopping-goods .contenter .content .order_content .cartcont .list_op .caozuo .shoucang a{
+    font-size: 14px;
+    color:#1c459d;
+    line-height: 25px;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .paybefore{
+    background:#FFFFCC;
+    height: 132px;
+    width: 176px;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .paybefore .calBtn1{
+    width: 155px;
+    height: 48px;
+    margin-top:20px;
+    background:#767676;
+    border-radius: 5px;
+    margin-left:10px;
+    text-align: center;
+    cursor: pointer;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .paybefore .calBtn1 a{
+    font-size: 20px;
+    color:#fff;
+    line-height: 48px;
+    text-align: center;
+    text-decoration-line: none;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .paybefore .calBtn2{
+    margin:15px 0 15px 10px ;
+    height: 25px;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .paybefore .calBtn2 a{
+    font-size: 14px;
+    line-height: 25px;
+    color:#1c459d;
+    text-decoration-line: none;
+}
+#shopping .shopping .shopping-pay .calBtn2:hover a{
+    color:#f60;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .payafter{
+    /* border-left:1px solid #e6e6e6; */
+    width: 176px;
+    height: 184px;
+    background:#FFFFCC;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .payafter .totalMoney{
+    margin-left:10px;
+    font-size: 16px;
+    color:#666;
+    line-height: 30px;
+    margin-top:20px;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .payafter .totalMoney .total_text{
+    margin-left:40px;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .payafter .totalNum .total_text{
+    margin-left:40px;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .payafter .totalNum{
+    margin-left:10px;
+    font-size: 16px;
+    color:#666;
+    line-height: 30px;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .payafter .calBtn1{
+    width: 155px;
+    height: 48px;
+    margin-top:20px;
+    background:#f60;
+    border-radius: 5px;
+    margin-left:10px;
+    text-align: center;
+    cursor: pointer;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .payafter .calBtn1 a{
+    font-size: 20px;
+    color:#fff;
+    line-height: 48px;
+    text-align: center;
+    text-decoration-line: none;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .payafter .calBtn2{
+    margin-left:10px;
+    margin-top:10px;
+    height: 25px;
+}
+#shopping .shopping .shopping-goods .contenter .shopping-pay .payafter .calBtn2 a{
+    font-size: 14px;
+    line-height: 25px;
+    color:#1c459d;
+    text-decoration-line: none;
+}
+#footer{
+    width: 100%;
+}
+#footer .footer{
+    padding:30px 0;
+    height: 60px;
+}
+#footer .footer .foot{
+    width: 980px;
+    height: 120px;
+    margin:0 auto;
+    
+}
+#footer .footer .foot p{
+    line-height: 28px;
+    text-align: center;
+    font-size: 14px;
+    color:#484848;
+}

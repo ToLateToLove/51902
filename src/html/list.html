@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <script src="../lib/jquery-1.11.0.min.js"></script>
+    <script src="../js/list.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/gwc.js"></script>
+    <script src="../js/list2.js"></script>
+</head>
+
+<body>
+    <div id="topbar">
+        <div class="wraper topbar">
+            <div class="topnav_left">
+                <ul class="aside">
+                    <li id="qrcode"><a href="###" class="phone">
+                            掌上新蛋</a>
+                        <div class="inner_code">
+                            <div class="code">
+                                <p> 新蛋APP</p>
+                                <img src="../img/qrcode_app.png" width="100" height="100" alt="">
+                                <span>全新APP<br>让购物成为享受</span>
+                            </div>
+                            <div class="code">
+                                <p>新蛋公众号</p>
+                                <img src="../img/qrcode_wechat.jpg" width="100" height="100" alt="">
+                                <span>精彩文章<br>周周更不停</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="###" class="bizGroupBuy">
+                            企业团购</a></li>
+                </ul>
+            </div>
+            <div class="topnav_right">
+                <ul class="aside fr">
+                    <li id="miniPayCountDown" class="hasub" show="" down="true"><a href="#" class="oper">
+                            我的订单</a> <s><a id="hiddenPayCountDown" style="display:none">
+                                
+                            </a></s>
+                        <div class="inner logintip">请<a href="#" class="blue underline">登录</a>后查看</div>
+                    </li>
+                    <li id="miniMyNewegg" class="hasub" show="" down="true"><a href="#" class="oper">
+                            我的新蛋<s></s></a>
+                        <div class="inner logintip">请<a href="#" class="blue underline">登录</a>后查看</div>
+                    </li>
+                    <li><a href="#">
+                            帮助中心</a></li>
+                    <li class="hasub service"><a href="###" class="oper">
+                            客户服务<s></s></a>
+                        <div class="inner">
+                            <div class="info">
+                                <p class="orange fz14">
+                                    <strong>
+                                        400-820-4400</strong></p>
+                                <strong>
+                                    021-67072699</strong>
+                                <p>
+                                    每天 9:00 - 18:00</p>
+                            </div>
+                            <div class="connect_way">
+                                <div class="common_btn"><a id="common_btn common_blue_btn" href="#" title="在线咨询"
+                                        style="margin-right: 4px;"><span>
+                                            在线咨询</span>
+                                    </a></div>
+                                <div class="common_btn">
+                                    <a id="common_btn common_blue_btn" href="#" title="邮件我们"><span>
+                                            邮件我们</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="topnav_center">
+                <span class="userpanel " id="userpanel" style="display: block;"><a
+                        href="../html/reg.html">注册</a><b>|</b><a href="../html/login.html">登录</a>
+                    <span id="spWelcome" class="welcome">晚上好,欢迎来新蛋购物！</span>
+                </span>
+                <span id="usename1" style="display: none;">
+                    <p id="con">晚上好，欢迎来到新蛋购物！</p>
+                    <p id="quit">退出</p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="header" class="wraper">
+        <div class="wraper header">
+            <a id="logo" href="../index.html" ref="noBlank" title="新蛋中国 - 全球领先的IT/数码网上购物商城-笔记本,电脑配件,数码相机,手机,办公设备,家电,百货"
+                class="inblock logo ie6png"></a>
+            <div class="searchbar ">
+                <div class="searchinput">
+                    <input type="text" value="" placeholder="请输入您要搜索的关键字" name="keyword" id="topSearch"
+                        autocomplete="off" maxlength="50" x-webkit-speech="" class="keyword hasDefaultText">
+                    <div class="sousuo">
+                        <a href="###" class="btn_search" title="搜索">搜索</a>
+                    </div>
+                </div>
+                <p class="hot">
+                    <a href="###">Bose</a><b>|</b><a href="###">iPhone XS</a><b>|</b><a href="###">mate20</a><b>|</b><a
+                        href="###">Thinkpad</a><b>|</b><a href="###">索尼电视机</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="menu_index">
+        <div class="wraper">
+            <ul class="nav">
+                <li><a href="###" title="首页">首页</a></li>
+                <li><a href="###" title="限时抢购">限时抢购</a></li>
+                <li><a href="###" title="团团赚">团团赚</a></li>
+                <li><a href="###" title="爱车配">爱车配</a></li>
+                <li id="nav_banner" class="endhid"><a href="###" title="二手宝库">二手宝库</a></li>
+            </ul>
+            <div class="menu" id="innermenu">
+                <h3><a href="###" title="全部商品分类">全部商品分类</a></h3>
+                <div class="menulist" id="navigationPanel">
+                    <ul class="menunavi cls">
+                        <li class="item">
+                            <dl style="height: 100%;padding-bottom:10px">
+                                <dt>
+                                    <div class="banner_icon"></div>
+                                    <div class="drop_links">
+                                        <h4>
+                                            <a href="###">手机</a>&nbsp;
+                                            <a href="###">摄影</a>&nbsp;
+                                            <a href="###">苹果</a>&nbsp;
+                                        </h4>
+                                        <div class="se_links" style="overflow: hidden; line-height: 27px;width: 132px;">
+                                            <a href="###" class="clf60">智能手机</a>&nbsp;
+                                            <a href="###">微单</a>&nbsp;
+                                        </div>
+                                    </div>
+                                </dt>
+                                <dd>
+                                    <div class="ddwrap">
+                                        <img src="../img/mate20tu.jpg" alt="mate20" class="bgimg" usemap="#imhot17749">
+                                        <map name="imhot17749"><area shape="rect" coords="0,300,818,490" href="###"
+                                                title="mate20"></map>
+                                        <table cellpadding="0" cellspacing="0" class="ddwrap_brand_table">
+                                            <tbody>
+                                                <tr>
+                                                    <th><label>手机</label></th>
+                                                    <td>
+                                                        <a href="###" class="clf60">华为</a>
+                                                        <b>|</b>
+                                                        <a href="###">小米</a>
+                                                        <b>|</b>
+                                                        <a href="###">魅族</a>
+                                                        <b>|</b>
+                                                        <a href="###">vivo</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>苹果专区</label></th>
+                                                    <td>
+                                                        <a href="###" class="clf60">iPhone</a>
+                                                        <b>|</b>
+                                                        <a href="###">iPad</a>
+                                                        <b>|</b>
+                                                        <a href="###">Watch</a>
+                                                        <b>|</b>
+                                                        <a href="###">iMac</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">MacBook</a>
+                                                        <b>|</b>
+                                                        <a href="###">苹果通用附件</a>
+                                                        <b>|</b>
+                                                        <a href="###">苹果原装配件</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>手机配件</label></th>
+                                                    <td>
+                                                        <a href="###">手机电池/充电器</a>
+                                                        <b>|</b>
+                                                        <a href="###">手机数据线</a>
+                                                        <b>|</b>
+                                                        <a href="###">车载手机配件</a>
+                                                        <b>|</b>
+                                                        <a href="###">手机通用配件</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">移动电源</a>
+                                                        <b>|</b>
+                                                        <a href="###">手机耳机</a>
+                                                        <b>|</b>
+                                                        <a href="###">无线充电</a>
+                                                        <b>|</b>
+                                                        <a href="###">手机镜头/拍摄器材</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>智能硬件</label></th>
+                                                    <td>
+                                                        <a href="###" class="clf60">智能穿戴/设备</a>
+                                                        <b>|</b>
+                                                        <a href="###">无人机</a>
+                                                        <b>|</b>
+                                                        <a href="###">平衡车</a>
+                                                        <b>|</b>
+                                                        <a href="###">游戏机</a>
+                                                        <b>|</b>
+                                                        <a href="###">游戏周边</a>
+                                                        <b>|</b>
+                                                        <a href="###">游戏手柄</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>数码摄影</label></th>
+                                                    <td>
+                                                        <a href="###" class="clf60">单电/微单</a>
+                                                        <b>|</b>
+                                                        <a href="###">镜头</a>
+                                                        <b>|</b>
+                                                        <a href="###">数码相机</a>
+                                                        <b>|</b>
+                                                        <a href="###">数码摄像机</a>
+                                                        <b>|</b>
+                                                        <a href="###">特殊相机</a>
+                                                        <b>|</b>
+                                                        <a href="###">照片打印机</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>数码附件</label></th>
+                                                    <td>
+                                                        <a href="###">镜头滤镜</a>
+                                                        <b>|</b>
+                                                        <a href="###">数码贴膜/清洁</a>
+                                                        <b>|</b>
+                                                        <a href="###">数码包</a>
+                                                        <b>|</b>
+                                                        <a href="###">三脚架/云台</a>
+                                                        <b>|</b>
+                                                        <a href="###">电池/充电器</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">存储卡</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="drop_list_hot">
+                                            <h4><strong>热门品牌</strong></h4>
+                                            <div class="drop_brand_hot">
+                                                <a title="苹果" href="###"></a>
+                                                <a title="华为" href="###"></a>
+                                                <a title="小米" href="###"></a>
+                                                <a title="魅族" href="###"></a>
+                                                <a title="佳能" href="###"></a>
+                                                <a title="尼康" href="###"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="item">
+                            <dl style="height: 100%;padding-bottom:10px">
+                                <dt>
+                                    <div class="drop_links" style="height: 100%;">
+                                        <div class="banner_icon banner_icon_1"></div>
+                                        <h4>
+                                            <a href="###">电脑</a>&nbsp;
+                                            <a href="###">外设</a>&nbsp;
+                                            <a href="###">办公</a>&nbsp;
+                                        </h4>
+                                        <div class="se_links" style="overflow: hidden; line-height: 27px;width: 132px;">
+                                            <a href="###">平板</a>&nbsp;
+                                            <a href="###" class="clf60">笔记本</a>&nbsp;
+                                            <a href="###" class="clf60">路由器</a>&nbsp;
+                                            <a href="###">耳机耳麦</a>&nbsp;
+                                        </div>
+                                    </div>
+                                    <div class="menudt_bot"></div>
+                                </dt>
+                                <dd>
+                                    <div class="ddwrap">
+                                        <table cellpadding="0" cellspacing="0" class="ddwrap_brand_table">
+                                            <tbody>
+                                                <tr>
+                                                    <th><label>电脑整机</label></th>
+                                                    <td>
+                                                        <a href="###" class="clf60">笔记本</a>
+                                                        <b>|</b>
+                                                        <a href="###">平板配件</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">平板</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>电脑配件</label></th>
+                                                    <td>
+                                                        <a href="###">主板</a>
+                                                        <b>|</b>
+                                                        <a href="###">硬盘</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">SSD固态硬盘</a>
+                                                        <b>|</b>
+                                                        <a href="###">内存</a>
+                                                        <b>|</b>
+                                                        <a href="###">机箱</a>
+                                                        <b>|</b>
+                                                        <a href="###">电源</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">显示器</a>
+                                                        <b>|</b>
+                                                        <a href="###">散热器</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>电脑外设</label></th>
+                                                    <td>
+                                                        <a href="###">键盘</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">鼠标</a>
+                                                        <b>|</b>
+                                                        <a href="###">U盘</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">移动硬盘</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">存储卡</a>
+                                                        <b>|</b>
+                                                        <a href="###">读卡器</a>
+                                                        <b>|</b>
+                                                        <a href="###">插座</a>
+                                                        <b>|</b>
+                                                        <a href="###">鼠标垫/附件</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>网络设备</label></th>
+                                                    <td>
+                                                        <a href="###" class="clf60">路由器</a>
+                                                        <b>|</b>
+                                                        <a href="###">网卡</a>
+                                                        <b>|</b>
+                                                        <a href="###">无线AP</a>
+                                                        <b>|</b>
+                                                        <a href="###">交换机</a>
+                                                        <b>|</b>
+                                                        <a href="###">网络配件</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>音频设备</label></th>
+                                                    <td>
+                                                        <a href="###" class="clf60">耳机/耳麦</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">音箱</a>
+                                                        <b>|</b>
+                                                        <a href="###">手机耳机</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>智能硬件</label></th>
+                                                    <td>
+                                                        <a href="###" class="clf60">智能穿戴/设备</a>
+                                                        <b>|</b>
+                                                        <a href="###">无人机</a>
+                                                        <b>|</b>
+                                                        <a href="###">平衡车</a>
+                                                        <b>|</b>
+                                                        <a href="###">游戏机</a>
+                                                        <b>|</b>
+                                                        <a href="###">游戏周边</a>
+                                                        <b>|</b>
+                                                        <a href="###">游戏手柄</a>
+                                                        <b>|</b>
+                                                        <a href="###">苹果配件</a>
+                                                        <b>|</b>
+                                                        <a href="###">智能配饰</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>办公设备</label></th>
+                                                    <td>
+                                                        <a href="###">喷墨一体机</a>
+                                                        <b>|</b>
+                                                        <a href="###">激光一体机</a>
+                                                        <b>|</b>
+                                                        <a href="###">激光打印机</a>
+                                                        <b>|</b>
+                                                        <a href="###">喷墨打印机</a>
+                                                        <b>|</b>
+                                                        <a href="###">针式打印机</a>
+                                                        <b>|</b>
+                                                        <a href="###">投影机</a>
+                                                        <b>|</b>
+                                                        <a href="###">传真机</a>
+                                                        <b>|</b>
+                                                        <a href="###">扫描仪</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>打印耗材</label></th>
+                                                    <td>
+                                                        <a href="###">硒鼓/墨粉</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="drop_list_hot">
+                                            <h4><strong>热门品牌</strong></h4>
+                                            <div class="drop_brand_hot">
+                                                <a title="THINKPAD" href="###"></a>
+                                                <a title="华硕" href="###"></a>
+                                                <a title="戴尔" href="###"></a>
+                                                <a title="惠普" href="###"></a>
+                                                <a title="联想" href="###"></a>
+                                                <a title="微软" href="###"></a>
+                                            </div>
+                                        </div>
+                                        <div class="menudl_bot"></div>
+                                        <div class="menudl_right"></div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="item">
+                            <dl style="height: 100%;padding-bottom:10px">
+                                <dt>
+                                    <div class="drop_links" style="height: 100%;">
+                                        <div class="banner_icon banner_icon_2"></div>
+                                        <h4>
+                                            <a href="###">家用电器</a>&nbsp;
+                                        </h4>
+                                        <div class="se_links" style="overflow: hidden; line-height: 27px;width: 132px;">
+                                            <a href="###">净化器</a>&nbsp;
+                                            <a href="###">美容仪</a>&nbsp;
+                                            <a href="###" class="clf60">吸尘器</a>&nbsp;
+                                            <a href="###">微波炉</a>&nbsp;
+                                        </div>
+                                    </div>
+                                    <div class="menudt_bot"></div>
+                                </dt>
+                                <dd>
+                                    <div class="ddwrap">
+                                        <table cellpadding="0" cellspacing="0" class="ddwrap_brand_table">
+                                            <tbody>
+                                                <tr>
+                                                    <th><label>平板电视</label></th>
+                                                    <td>
+                                                        <a href="###" class="clf60">40-60英寸</a>
+                                                        <b>|</b>
+                                                        <a href="###">大于60英寸</a>
+                                                        <b>|</b>
+                                                        <a href="###">小于40英寸</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>冰/洗/空</label></th>
+                                                    <td>
+                                                        <a href="###">空调</a>
+                                                        <b>|</b>
+                                                        <a href="###">洗衣/干衣机</a>
+                                                        <b>|</b>
+                                                        <a href="###">冰箱/冷柜</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>视听设备</label></th>
+                                                    <td>
+                                                        <a href="###" class="clf60">音箱</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>家装电器</label></th>
+                                                    <td>
+                                                        <a href="###">烟机/灶具</a>
+                                                        <b>|</b>
+                                                        <a href="###">燃气热水器</a>
+                                                        <b>|</b>
+                                                        <a href="###">电热水器</a>
+                                                        <b>|</b>
+                                                        <a href="###">消毒柜</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>生活家电</label></th>
+                                                    <td>
+                                                        <a href="###" class="clf60">取暖电器</a>
+                                                        <b>|</b>
+                                                        <a href="###">电熨斗/挂烫机</a>
+                                                        <b>|</b>
+                                                        <a href="###">吸尘器/清洁机</a>
+                                                        <b>|</b>
+                                                        <a href="###">加湿器</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">空气净化器</a>
+                                                        <b>|</b>
+                                                        <a href="###">饮水机</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">净水设备</a>
+                                                        <b>|</b>
+                                                        <a href="###">电风扇/空调扇</a>
+                                                        <b>|</b>
+                                                        <a href="###">驱蚊器</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>个护健康</label></th>
+                                                    <td>
+                                                        <a href="###" class="clf60">电吹风</a>
+                                                        <b>|</b>
+                                                        <a href="###">电动牙刷</a>
+                                                        <b>|</b>
+                                                        <a href="###">美容美发器</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">剃须/脱毛器</a>
+                                                        <b>|</b>
+                                                        <a href="###">足浴盆</a>
+                                                        <b>|</b>
+                                                        <a href="###">按摩器材</a>
+                                                        <b>|</b>
+                                                        <a href="###">电子体温计</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">血压计</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th><label>厨房电器</label></th>
+                                                    <td>
+                                                        <a href="###">电磁炉</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">电饭煲</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">电水壶</a>
+                                                        <b>|</b>
+                                                        <a href="###">电压力锅</a>
+                                                        <b>|</b>
+                                                        <a href="###">豆浆机</a>
+                                                        <b>|</b>
+                                                        <a href="###">多用途电锅</a>
+                                                        <b>|</b>
+                                                        <a href="###">咖啡机</a>
+                                                        <b>|</b>
+                                                        <a href="###">料理/榨汁机</a>
+                                                        <b>|</b>
+                                                        <a href="###">食品加工机</a>
+                                                        <b>|</b>
+                                                        <a href="###" class="clf60">微波炉/电烤箱</a>
+                                                        <b>|</b>
+                                                        <a href="###">酸奶机/冰淇凌机</a>
+                                                        <b>|</b>
+                                                        <a href="###">电饼铛/煎烤机</a>
+                                                        <b>|</b>
+                                                        <a href="###">面包机/煮蛋器</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="drop_list_hot">
+                                            <h4><strong>热门品牌</strong></h4>
+                                            <div class="drop_brand_hot">
+                                                <a title="飞利浦" href="###"></a>
+                                                <a title="松下" href="###"></a>
+                                                <a title="格兰仕" href="###"></a>
+                                                <a title="苏泊尔" href="###"></a>
+                                                <a title="美的" href="###"></a>
+                                                <a title="夏普" href="###"></a>
+                                            </div>
+                                        </div>
+                                        <div class="menudl_bot"></div>
+                                        <div class="menudl_right"></div>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="item_last">
+                            <dl>
+                                <dt>
+                                    <div class="drop_links">
+                                        <div class="banner_icon banner_icon_4"></div>
+                                        <h4 id="last_li_h4" style="zoom: 1;">
+                                            生活百货
+                                            &nbsp;
+                                        </h4>
+                                        <div class="se_links">
+                                            <ul class="se_links_ul">
+                                                <li class="">
+                                                    <div class="se_links_a" style="zoom: 1;">
+                                                        <a href="###" class="clf60">汽车用品</a>&nbsp;
+                                                        <a href="###">个护清洁</a>&nbsp;
+                                                    </div>
+                                                    <div class="menudt_bot"></div>
+                                                    <div class="childmenu" style="top:-347px">
+                                                        <div class="ddwrap">
+                                                            <img src="../img/kiddy.jpg" alt="宝宝椅" class="bgimg ie6png"
+                                                                usemap="#imhot22528"
+                                                                style="position: absolute; zoom: 1;">
+                                                            <map name="imhot22528"><area shape="rect"
+                                                                    coords="0,300,818,490" href="###" title="宝宝椅"></map>
+                                                            <table cellpadding="0" cellspacing="0"
+                                                                class="ddwrap_brand_table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th><label>汽车养护</label></th>
+                                                                        <td>
+                                                                            <a href="###">汽车清洁</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">保养添加剂</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><label>汽车装饰</label></th>
+                                                                        <td>
+                                                                            <a href="###">外饰装潢</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">香水除味</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">功能精品</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">内饰装潢</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><label>汽车电子</label></th>
+                                                                        <td>
+                                                                            <a href="###" class="clf60">行车记录仪</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">车载数码配件</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">车载生活电器</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">车载电源</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><label>汽车安全</label></th>
+                                                                        <td>
+                                                                            <a href="###" class="clf60">儿童安全座椅</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><label>个人护理</label></th>
+                                                                        <td>
+                                                                            <a href="###">情趣用品</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><label>家庭常备</label></th>
+                                                                        <td>
+                                                                            <a href="###">生活用纸</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><label>健康电器</label></th>
+                                                                        <td>
+                                                                            <a href="###">足浴盆</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">按摩器材</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">电子体温计</a>
+                                                                            <b>|</b>
+                                                                            <a href="###" class="clf60">血压计</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <div class="drop_list_hot">
+                                                                <h4><strong>热门品牌</strong></h4>
+                                                                <div class="drop_brand_hot">
+                                                                    <a title="微软" href="###"></a>
+                                                                    <a title="松下" href="###"></a>
+                                                                    <a title="索尼" href="###"></a>
+                                                                    <a title="LG" href="###"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menudl_bot"></div>
+                                                        <div class="menudl_right"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="se_links_a" style="zoom: 1;">
+                                                        <a href="###">家居</a>&nbsp;
+                                                        <a href="###">厨用</a>&nbsp;
+                                                        <a href="###">钟表</a>&nbsp;
+                                                        <a href="###">礼品</a>&nbsp;
+                                                    </div>
+                                                    <div class="menudt_bot"></div>
+                                                    <div class="childmenu" style="top:-374px">
+                                                        <div class="ddwrap">
+                                                            <table cellpadding="0" cellspacing="0"
+                                                                class="ddwrap_brand_table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th><label>家居用品</label></th>
+                                                                        <td>
+                                                                            <a href="###" class="clf60">台灯/护眼灯</a>
+                                                                            <b>|</b>
+                                                                            <a href="###" class="clf60">智能家居</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">收纳保鲜</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">伞具雨具</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><label>厨具餐具</label></th>
+                                                                        <td>
+                                                                            <a href="###" class="clf60">茶具/酒具</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">厨房配件</a>
+                                                                            <b>|</b>
+                                                                            <a href="###" class="clf60">刀剪砧板</a>
+                                                                            <b>|</b>
+                                                                            <a href="###" class="clf60">烹饪锅具</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">收纳保鲜</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><label>家纺</label></th>
+                                                                        <td>
+                                                                            <a href="###">电热毯/垫</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">卫浴家纺</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">床品用品</a>
+                                                                            <b>|</b>
+                                                                            <a href="###" class="clf60">床品套件</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">毯子</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">被子</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">枕芯</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><label>精美礼品</label></th>
+                                                                        <td>
+                                                                            <a href="###">办公文具</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <div class="drop_list_hot">
+                                                                <h4><strong>热门品牌</strong></h4>
+                                                                <div class="drop_brand_hot">
+                                                                    <a title="惠普" href="###"></a>
+                                                                    <a title="爱普生" href="###"></a>
+                                                                    <a title="格之格" href="###"></a>
+                                                                    <a title="三菱" href="###"></a>
+                                                                    <a title="百乐" href="###"></a>
+                                                                    <a title="3M" href="###"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menudl_bot"></div>
+                                                        <div class="menudl_right"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="se_links_a" style="zoom: 1;">
+                                                        <a href="###">内衣</a>&nbsp;
+                                                        <a href="###">珠宝</a>&nbsp;
+                                                    </div>
+                                                    <div class="menudt_bot"></div>
+                                                    <div class="childmenu" style="top:-401px">
+                                                        <div class="ddwrap">
+                                                            <table cellpadding="0" cellspacing="0"
+                                                                class="ddwrap_brand_table">
+                                                            </table>
+                                                            <div class="drop_list_hot">
+                                                                <h4><strong>热门品牌</strong></h4>
+                                                                <div class="drop_brand_hot">
+                                                                    <a title="天梭" href="###"></a>
+                                                                    <a title="卡西欧" href="###"></a>
+                                                                    <a title="汉爱" href="###"></a>
+                                                                    <a title="精准" href="###"></a>
+                                                                    <a title="威古氏" href="###"></a>
+                                                                    <a title="天美时" href="###"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menudl_bot"></div>
+                                                        <div class="menudl_right"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="se_links_a" style="zoom: 1;">
+                                                        <a href="###">母婴</a>&nbsp;
+                                                        <a href="###">玩具</a>&nbsp;
+                                                        <a href="###">食品</a>&nbsp;
+                                                        <a href="###">酒饮</a>&nbsp;
+                                                    </div>
+                                                    <div class="menudt_bot"></div>
+                                                    <div class="childmenu" style="top:-428px">
+                                                        <div class="ddwrap">
+                                                            <table cellpadding="0" cellspacing="0"
+                                                                class="ddwrap_brand_table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th><label>休闲食品</label></th>
+                                                                        <td>
+                                                                            <a href="###">休闲小食</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><label>冲调饮料</label></th>
+                                                                        <td>
+                                                                            <a href="###">茶包/茶类</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <div class="drop_list_hot">
+                                                                <h4><strong>热门品牌</strong></h4>
+                                                                <div class="drop_brand_hot">
+                                                                    <a title="BANEBERRY" href="###"></a>
+                                                                    <a title="SWISSWIN" href="###"></a>
+                                                                    <a title="teemzone" href="###"></a>
+                                                                    <a title="weekender" href="###"></a>
+                                                                    <a title="博云物联" href="###"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menudl_bot"></div>
+                                                        <div class="menudl_right"></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="se_links_a" style="zoom: 1;">
+                                                        <a href="###">鞋靴</a>&nbsp;
+                                                        <a href="###">箱包</a>&nbsp;
+                                                        <a href="###">运动</a>&nbsp;
+                                                        <a href="###">户外</a>&nbsp;
+                                                    </div>
+                                                    <div class="menudt_bot"></div>
+                                                    <div class="childmenu" style="top:-455px">
+                                                        <div class="ddwrap">
+                                                            <table cellpadding="0" cellspacing="0"
+                                                                class="ddwrap_brand_table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th><label>运动器械</label></th>
+                                                                        <td>
+                                                                            <a href="###">自行车</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><label>男女皮具</label></th>
+                                                                        <td>
+                                                                            <a href="###">男士钱包/手包</a>
+                                                                            <b>|</b>
+                                                                            <a href="###" class="clf60">皮带/礼盒</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">女士钱包/手包</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th><label>功能箱包</label></th>
+                                                                        <td>
+                                                                            <a href="###" class="clf60">电脑包</a>
+                                                                            <b>|</b>
+                                                                            <a href="###" class="clf60">旅行箱包</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">运动休闲包</a>
+                                                                            <b>|</b>
+                                                                            <a href="###">商务公文包</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <div class="drop_list_hot">
+                                                                <h4><strong>热门品牌</strong></h4>
+                                                                <div class="drop_brand_hot">
+                                                                    <a title="七匹狼" href="###"></a>
+                                                                    <a title="莱斯玛特" href="###"></a>
+                                                                    <a title="维氏" href="###"></a>
+                                                                    <a title="佳明" href="###"></a>
+                                                                    <a title="圣弗莱" href="###"></a>
+                                                                    <a title="猎鹰计划" href="###"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="menudl_bot"></div>
+                                                        <div class="menudl_right"></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="menudt_bot"></div>
+                                </dt>
+                                <dd>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="utility">
+                <dl class="mycart" hover="" show="" down="true">
+                    <dt class="opener" id="tit_cart"><a id="gotoShoppingcart_a" href="###">购物车<strong
+                                id="headerCartCount">0</strong>件<s></s></a></dt>
+                    <dd class="openerC" id="cartContainer">
+                        <div class="inner" style="width: 226px;">
+                            <div class="empty">
+                                <s class="inblock mr5"></s>您还没有购买商品，快去挑选吧！
+                            </div>
+                            <input type="hidden" id="minicartTotalQty" value="0">
+                            <input type="hidden" id="hidMiniCouldSelectGift" value="0">
+                        </div>
+                    </dd>
+                </dl>
+                <dl class="favor" hover="" show="" down="true">
+                    <dt class="opener" id="tit_favor"><a href="###">收藏提醒<s></s></a></dt>
+                    <dd class="openerC" id="favorContainer">
+                        <div class="inner collectList" style="width: 226px;">
+                            <div id="divWishListNoHaveContainer" class="listwrap favorwrap">
+                                <div class="logintip">请登录后查看<a href="###" class="egg_btns_t1 egg_btns_org ml10">登录</a>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div id="crumb" class="crumb_1213">
+        <div class="wraper">
+            <div class="inner">
+                <a title="新蛋中国 - 全球领先的IT/数码网上购物商城-笔记本,电脑配件,数码相机,手机,办公设备,家电,百货" href="../index.html">首页</a>
+                <span> &gt; </span><a title="手机" href="###">手机</a><span> &gt;
+                </span><strong>华为</strong>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="wraper">
+            <div class="wrap">
+                <div class="wrap-left">
+                    <div class="wrap-left-top">
+                        <div class="list">
+                            <h2>手机</h2>
+                            <ul class="lis" id="li1">
+                                <li><a href="###">华为</a></li>
+                                <li><a href="###">小米</a></li>
+                                <li><a href="###">魅族</a></li>
+                                <li><a href="###">vivo</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h2>手机配件</h2>
+                            <ul class="lis">
+                                <li><a href="###">手机电池/充电器</a></li>
+                                <li><a href="###">手机数据线</a></li>
+                                <li><a href="###">手机通用配件</a></li>
+                                <li><a href="###">移动电源</a></li>
+                                <li><a href="###">无线充电</a></li>
+                                <li><a href="###">手机镜头/拍摄器材</a></li>
+                            </ul>
+                        </div>
+                        <div class="list">
+                            <h2>智能硬件</h2>
+                            <ul class="lis">
+                                <li><a href="###">智能穿戴/设备</a></li>
+                                <li><a href="###">无人机</a></li>
+                                <li><a href="###">平衡车</a></li>
+                                <li><a href="###">游戏机</a></li>
+                                <li><a href="###">游戏周边</a></li>
+                                <li><a href="###">游戏手柄</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                 
+                    <div class="wrap-left-middle">
+                        <div class="paihang">
+                            <p>热销榜</p>
+                            <p>降价榜</p>
+                        </div>
+                        <ul class="prolist cls">
+                            <li>
+                                <p class="img">
+                                    <a href="###"
+                                        title="荣耀10 AI摄影手机 6GB+128GB 幻夜黑 全网通 双卡双待 尊享版输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                        <img src="../img/A28-800-7YA.jpg"
+                                            alt="荣耀10 AI摄影手机 6GB+128GB 幻夜黑 全网通 双卡双待 尊享版输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                    </a>
+                                </p>
+                                <p class="title">
+                                    <strong>1. </strong>
+                                    <a href="###"
+                                        title="荣耀10 AI摄影手机 6GB+128GB 幻夜黑 全网通 双卡双待 尊享版输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                        荣耀10 AI摄影手机 6GB+128GB 幻夜黑 全网通 双卡双待 尊享版
+                                    </a>
+                                </p>
+                                <p class="priceline"><span class="price"><span>¥</span>2399.00</span></p>
+                            </li>
+                            <li>
+                                <p class="img">
+                                    <a href="###"
+                                        title="华为 HUAWEI nova3 全面屏高清四摄游戏手机 6GB+128GB 亮黑色 全网通 4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                        <img src="../img/A28-800-83V.jpg"
+                                            alt="华为 HUAWEI nova3 全面屏高清四摄游戏手机 6GB+128GB 亮黑色 全网通 4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                    </a>
+                                </p>
+                                <p class="title">
+                                    <strong>2. </strong>
+                                    <a href="###"
+                                        title="华为 HUAWEI nova3 全面屏高清四摄游戏手机 6GB+128GB 亮黑色 全网通 4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                        华为 HUAWEI nova3 全面屏高清四摄游戏手机 6GB+128GB 亮黑色 全网通 4G手机 双卡双待
+                                    </a>
+                                </p>
+                                <p class="priceline"><span class="price"><span>¥</span>2799.00</span></p>
+                            </li>
+                            <li>
+                                <p class="img">
+                                    <a href="###"
+                                        title="华为 HUAWEI nova3 全面屏高清四摄游戏手机 6GB+128GB 浅艾蓝 全网通4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                        <img src="../img/A28-800-83W.jpg"
+                                            alt="华为 HUAWEI nova3 全面屏高清四摄游戏手机 6GB+128GB 浅艾蓝 全网通4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                    </a>
+                                </p>
+                                <p class="title">
+                                    <strong>3. </strong>
+                                    <a href="###"
+                                        title="华为 HUAWEI nova3 全面屏高清四摄游戏手机 6GB+128GB 浅艾蓝 全网通4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                        华为 HUAWEI nova3 全面屏高清四摄游戏手机 6GB+128GB 浅艾蓝 全网通4G手机 双卡双待
+                                    </a>
+                                </p>
+                                <p class="priceline"><span class="price"><span>¥</span>2799.00</span></p>
+                            </li>
+                            <li>
+                                <p class="img">
+                                    <a href="###"
+                                        title="华为 HUAWEI nova3 全面屏高清四摄游戏手机 6GB+128GB 蓝楹紫 全网通4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                        <img src="../img/A28-800-83X.jpg"
+                                            alt="华为 HUAWEI nova3 全面屏高清四摄游戏手机 6GB+128GB 蓝楹紫 全网通4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                    </a>
+                                </p>
+                                <p class="title">
+                                    <strong>4. </strong>
+                                    <a href="###"
+                                        title="华为 HUAWEI nova3 全面屏高清四摄游戏手机 6GB+128GB 蓝楹紫 全网通4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                        华为 HUAWEI nova3 全面屏高清四摄游戏手机 6GB+128GB 蓝楹紫 全网通4G手机 双卡双待
+                                    </a>
+                                </p>
+                                <p class="priceline"><span class="price"><span>¥</span>2799.00</span></p>
+                            </li>
+                            <li>
+                                <p class="img">
+                                    <a href="###"
+                                        title="HUAWEI 麦芒7 6G+64G 亮黑色 全网通 移动联通电信4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                        <img src="../img/A28-800-85R.jpg"
+                                            alt="HUAWEI 麦芒7 6G+64G 亮黑色 全网通 移动联通电信4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                    </a>
+                                </p>
+                                <p class="title">
+                                    <strong>5. </strong>
+                                    <a href="###"
+                                        title="HUAWEI 麦芒7 6G+64G 亮黑色 全网通 移动联通电信4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                        HUAWEI 麦芒7 6G+64G 亮黑色 全网通 移动联通电信4G手机 双卡双待
+                                    </a>
+                                </p>
+                                <p class="priceline"><span class="price"><span>¥</span>1629.00</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wrap-left-bottom">
+                        <div class="mt10 vote" id="voteDiv">
+                            <div class="cpt">
+                                <h3>投票</h3>
+                            </div>
+                            <div class="inner">
+                                <p class="mt5 title">您希望在新蛋能购买到以下哪个品牌的笔记本电脑？</p>
+                                <ul>
+                                    <li class=" ">
+                                        <label for="1-338-2240" title="三星">
+                                            <input type="radio" class="inrdo" id="1-338-2240"
+                                                name="1-338"><span>三星&nbsp;</span>
+                                        </label>
+                                    </li>
+                                    <li class="double ">
+                                        <label for="1-338-2241" title="神舟">
+                                            <input type="radio" class="inrdo" id="1-338-2241"
+                                                name="1-338"><span>神舟&nbsp;</span>
+                                        </label>
+                                    </li>
+                                    <li class=" ">
+                                        <label for="1-338-2242" title="海尔">
+                                            <input type="radio" class="inrdo" id="1-338-2242"
+                                                name="1-338"><span>海尔&nbsp;</span>
+                                        </label>
+                                    </li>
+                                    <li class="double ">
+                                        <label for="1-338-2243" title="清华同方">
+                                            <input type="radio" class="inrdo" id="1-338-2243"
+                                                name="1-338"><span>清华同方&nbsp;</span>
+                                        </label>
+                                    </li>
+                                    <li class=" ">
+                                        <label for="1-338-2244" title="富士通">
+                                            <input type="radio" class="inrdo" id="1-338-2244"
+                                                name="1-338"><span>富士通&nbsp;</span>
+                                        </label>
+                                    </li>
+                                    <li class="double ">
+                                        <label for="1-338-2245" title="雷蛇">
+                                            <input type="radio" class="inrdo" id="1-338-2245"
+                                                name="1-338"><span>雷蛇&nbsp;</span>
+                                        </label>
+                                    </li>
+                                    <li class=" ">
+                                        <label for="1-338-2246" title="外星人">
+                                            <input type="radio" class="inrdo" id="1-338-2246"
+                                                name="1-338"><span>外星人&nbsp;</span>
+                                        </label>
+                                    </li>
+                                    <li class="double ">
+                                        <label for="1-338-2247" title="微星">
+                                            <input type="radio" class="inrdo" id="1-338-2247"
+                                                name="1-338"><span>微星&nbsp;</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="action">
+                                <div class="toupiao">
+                                    <a href="###" class="egg_btns_t1 egg_btns_org">
+                                        投票
+                                    </a>
+                                    <a href="###" class="blue ml10 valign">
+                                        查看结果
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-top">
+                    <div class="filter_box">
+                        <div class="cpt">
+                            <span class="tit">共<strong class="strong">个</strong>产品</span>
+                        </div>
+                        <div class="inner">
+                            <ul>
+                                <li class="cls" id="dimfilter1">
+                                    <label>品牌：</label>
+                                    <div class="innerB">
+                                        <div><a href="###">HUAWEI
+                                                华为<span>(56)</span></a></div>
+                                        <div><a href="###">荣耀<span>(3)</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cls priceSelect" id="dimfilter2">
+                                    <label>价格：</label>
+                                    <div class="innerB">
+                                        <div><a class="price1" href="###">400
+                                                - 800<span>(3)</span></a></div>
+                                        <div><a class="price1" href="###">800
+                                                - 1600<span>(7)</span></a></div>
+                                        <div><a class="price1" href="###">1600
+                                                - 3200<span>(18)</span></a></div>
+                                        <div><a class="price1" href="###">3200
+                                                - 5600<span>(31)</span></a></div>
+                                        <span class="fl priceSearch">
+                                            <a href="###"
+                                                class="egg_btns_t1 egg_btns_org">筛选</a>
+                                            <em>¥</em><input id="iptUDPriceFrom" class="ml5" type="text"
+                                                value=""><b>-</b><input id="iptUDPriceTo" type="text" value="">
+
+                                        </span>
+                                  
+                                    </div>
+                                </li>
+                                <li class="cls" id="dimfilter3">
+                                    <label>网络制式：</label>
+                                    <div class="innerB">
+                                        <div><a href="###">4G<span>(40)</span></a>
+                                        </div>
+                                        <div><a href="###">三网<span>(12)</span></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cpt_filter">
+                            <div class="cpt ">
+                                <label>更多选项：</label>
+                                <ul>
+                                    <li class="navigationName">
+                                        <a href="#">操作系统 <s></s></a>
+                                    </li>
+                                    <li class="navigationName">
+                                        <a href="#">CPU核心数量 <s></s></a>
+                                    </li>
+                                    <li class="navigationName">
+                                        <a href="#">运行内存 <s></s></a>
+                                    </li>
+                                    <li class="navigationName">
+                                        <a href="#">屏幕尺寸 <s></s></a>
+                                    </li>
+                                    <li class="navigationName">
+                                        <a href="#">摄像头像素 <s></s></a>
+                                    </li>
+                                    <li class="navigationName">
+                                        <a href="#">前置摄像头 <s></s></a>
+                                    </li>
+                                    <li class="navigationName">
+                                        <a href="#">是否支持TF卡 <s></s></a>
+                                    </li>
+                                    <li class="navigationName">
+                                        <a href="#">SIM卡尺寸 <s></s></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cpt_filter_res" style="display: none;">
+                                <a href="###">Android(59)</a>
+                            </div>
+                            <div class="cpt_filter_res" style="display: none;">
+                                <a href="###">四核(3)</a>
+                                <a href="###">八核(56)</a>
+                            </div>
+                            <div class="cpt_filter_res" style="display: none;">
+                                <a href="###">2G(3)</a>
+                                <a href="###">3G(3)</a>
+                                <a href="###">4G(9)</a>
+                            </div>
+                            <div class="cpt_filter_res" style="display: none;">
+                                <a href="###">5.0-5.9英寸(4)</a>
+                                <a href="###">6.0-6.9英寸(37)</a>
+                                <a href="###">7.0英寸及以上(8)</a>
+                            </div>
+                            <div class="cpt_filter_res" style="display: none;">
+                                <a href="###">810万及以上(44)</a>
+                            </div>
+                            <div class="cpt_filter_res" style="display: none;">
+                                <a">支持(45)</a>
+                            </div>
+                            <div class="cpt_filter_res" style="display: none;">
+                                <a href="###">支持(16)</a>
+                                <a href="###">不支持(7)</a>
+                            </div>
+                            <div class="cpt_filter_res" style="display: none;">
+                                <a href="###">小卡(50)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="funcbar mt10">
+                        <div class="innert">
+                            <div class="prorank fl">
+                                <a href="###" id="orderBySale" class="bydown">
+                                    销量
+                                    <em class="arw"></em>
+                                </a>
+                                <a href="###" id="orderByPrice" class="byup">
+                                    价格
+                                    <em class="arw"></em>
+                                </a>
+                                <a href="###" id="orderByMark" class="bydown">
+                                    评分
+                                    <em class="arw"></em>
+                                </a>
+                                <a href="###" id="orderByDate" class="bydown">
+                                    上架时间
+                                    <em class="arw"></em>
+                                </a>
+                            </div>
+                            <div class="layout fl">
+                                <a title="橱窗" href="javascript:void(0);" class="listactive" id="SearchListByGrid"><em
+                                        class="icon"></em></a>
+                            </div>
+                            <div class="layout fl">
+                                <a title="列表" href="javascript:void(0);" class="row" id="SearchListByRow"><em
+                                        class="icon"></em></a>
+                            </div>
+                            <div class="displaynum fl">
+                                <a class="current" href="###"><span>24</span></a>
+                            </div>
+                            <div class="displaynum fl">
+                                <a href="###"><span>48</span></a>
+                            </div>
+                            <div class="displaynum fl">
+                                <a href="###"><span>96</span></a>
+                            </div>
+                            <div class="pro_search fr">
+                                <div class="inner">
+                                    <input id="iptSeachWithin" maxlength="50" autocomplete="off" type="text"
+                                        placeholder="在结果中搜索" class="intxt hasDefaultText">
+                                    <a class="egg_btns_t1 egg_btns_org" href="###">搜索</a>
+                                </div>
+                            </div>
+                         
+                            <div class="clear"></div>
+                        </div>
+                        <div class="innerb">
+                            <div class="fl view_fliter">
+                                <label>
+                                    <input type="checkbox" class="inchk intxtfocus" id="specFilter1">有返现</label>
+                                <label>
+                                    <input type="checkbox" class="inchk intxtfocus" id="specFilter2">送积分</label>
+                                <label>
+                                    <input type="checkbox" class="inchk intxtfocus" id="specFilter8">有赠品</label>
+                                <label>
+                                    <input type="checkbox" class="inchk intxtfocus" id="specFilter16">限时抢</label>
+                                <label>
+                                    <input type="checkbox" class="inchk intxtfocus" id="specFilter32">有库存</label>
+                                <label>
+                                    <input type="checkbox" class="inchk intxtfocus" id="specFilter64">支持礼品包装</label>
+                                <label>
+                                    <input type="checkbox" class="inchk intxtfocus" id="specFilter128"><span>二手品</span> </label>
+                                <label>
+                                    <input type="checkbox" class="inchk intxtfocus" id="specFilter512">海外直购</label>
+                                <label>
+                                    <input type="checkbox" class="inchk intxtfocus" id="specFilter1024">支持礼品卡</label>
+                            </div>
+                         
+                            <div class="fr pageNav">
+                                <span><span class="canp"></span></span>
+                                <a class=" pre preDisable" href="###"><span>&nbsp;</span></a>
+                                <ins>1/3</ins>
+                                <a class=" next" href="###"><span>下一页</span></a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="compareBar for_static" id="compareBar">
+                            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="first tc">对比商品</td>
+                                        <td class="tc prop">1</td>
+                                        <td class="tc prop">2</td>
+                                        <td class="tc prop">3</td>
+                                        <td class="tc prop">4</td>
+                                        <td class="tc prop">5</td>
+                                        <td class="last">
+                                            <a class="egg_btns_t1 egg_btns_org ml10"
+                                                href="###">比较</a>
+                                            <a class="ml10 blue valign"
+                                                href="###">清除全部</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="wrap-center">
+                    <ul class="prolist cls" id="prolist">
+                        <!-- <li class="cls" data-id="1">
+                            <div class="img">
+                                <a href="../html/goods.html"
+                                    title="荣耀 畅玩7 2GB+16GB 金色 全网通4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!"
+                                    >
+                                    <img src="../img/A28-800-830.jpg" class="beclone"
+                                        alt="荣耀 畅玩7 2GB+16GB 金色 全网通4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!">
+                                    <span class="icon_pro">
+                                    </span></a><span class="icon_pro">
+                                </span>
+                                <a class="ie6png sevendayoff" href="###" title="不支持7天无理由退换货" ></a>
+                            </div>
+                            <p class="title">
+                                <a href="###"
+                                    title="荣耀 畅玩7 2GB+16GB 金色 全网通4G手机 双卡双待输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!"
+                                    >荣耀 畅玩7 2GB+16GB 金色 全网通4G手机 双卡双待</a>
+                            </p>
+                            <p class="prom">输入蛋券SJ05,满1000-30元,满3000-100元,数量有限,先到先得!</p>
+                            <p class="cls cmt mt5">
+                                <span class="cls rank">
+                                    <a href="###" title="得分 5.0" class="rankB10" >[0]&nbsp;</a>
+                                </span>
+                            </p>
+                            <p class="priceline">
+                                <span class="price">¥599.00
+                                </span>
+                            </p>
+                            <p class="action">
+                                <a href="###" onclick="return InitAddToCart.addToCart(this,'455052','1');"
+                                    class="egg_btns_t1 egg_btns_org mr5">
+                                    购买
+                                </a><a href="aspx?action=Add&amp;productno=455052"
+                                    onclick="return AddToWishList(this,455052);" id="addtowishlist455052"
+                                    cid="addtowishlist455052" level="3" class="egg_btns_t1 egg_btns_white mr5"
+                                    >
+                                    收藏 </a>
+                                <a href="javascript:void(0);">
+                                    <label class="egg_input" for="ck_A28-800-830"><input type="checkbox"
+                                            id="ck_A28-800-830">比较</label>
+                                </a>
+                            </p>
+                        </li> -->
+                    </ul>
+                </div>
+                <div id="pages">
+                    <div id="page" class="page_div"></div>
+                    <script src="../lib/jquery-1.11.0.min.js"></script>
+                    <script type="text/javascript" src="../lib/pageMe.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class=" wraper index_footer">
+            <div class="helpcenter cls">
+                <dl class="help_fresh">
+                    <dt>新手上路</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="###" title="怎样购物">怎样购物</a></li>
+                            <li><a href="###" title="支付常见问题">支付常见问题</a></li>
+                            <li><a href="###" title="免运费政策">免运费政策</a></li>
+                            <li><a href="###" title="发票须知">发票须知</a></li>
+                            <li><a href="###" title="签收验货流程">签收验货流程</a></li>
+                            <li><a href="###" title="用户评论/咨询">用户评论/咨询</a></li>
+                            <li><a href="###" title="大件商品订购流程">大件商品订购流程</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="help_service">
+                    <dt>售后服务</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="###" title="退换货政策">退换货政策</a></li>
+                            <li><a href="###" title="订单查询">订单查询</a></li>
+                            <li><a href="###" title="售后申请">售后申请</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="SpecialServies">
+                    <dt>特色服务</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="###" title="关于会员制">关于会员制</a></li>
+                            <li><a href="###" title="价格保护">价格保护</a></li>
+                            <li><a href="###" title="隐私政策">隐私政策</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="help_cooperate">
+                    <dt>申请合作</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="###" title="申请成为供应商">申请成为供应商</a></li>
+                            <li><a href="###" title="申请入驻开放平台">申请入驻开放平台</a></li>
+                            <li><a href="###" title="友情合作">友情合作</a></li>
+                            <li><a href="###" title="网站联盟">网站联盟</a></li>
+                            <li><a href="###" title="企业客户">企业客户</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl class="help_about" style="border:none;">
+                    <dt>关于我们</dt>
+                    <dd>
+                        <ul>
+                            <li><a href="###" title="新蛋集团">新蛋集团 </a></li>
+                            <li><a href="###" title="联系我们">联系我们</a></li>
+                            <li><a href="###" title="诚聘英才">诚聘英才</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer">
+                <a href="###" ref="noBlank" title="上海工商" class="item2"></a>
+                <a class="item1" ref="noBlank" id="cnnic_url" oncontextmenu="return false;"
+                    onclick="change_CNNIC('cnnic_url')" href="###" title="可信网站"></a>
+                <a href="###" ref="noBlank" class="item3" title="E9WEB15"></a>
+                <a href="###" ref="noBlank" class="item7" title="网站备案信息" style="position:relative;">
+                    <span
+                        style="position: absolute;font-size:12px;text-indent:0px;line-height: normal;bottom: 4px;left: 37px;color: #001b75;font-family: serif;">31010602000303</span></a>
+                <a href="###" ref="noBlank" title="110网监" class="item8"></a>
+                <a href="###" ref="noBlank" title="网络社会征信网" class="item9"></a>
+                <a href="###" ref="noBlank" title="中央网信办" class="item10"></a>
+                <p class="abefore">新蛋集团网站：<a class="ml5" href=" " style="color:#484848">美国新蛋</a><a class="ml10" href=" "
+                        style="color:#484848">中国新蛋</a><a class="ml10" href=" " style="color:#484848">加拿大新蛋</a><a
+                        class="ml10" href="###" style="color:#484848">新蛋软件</a>
+                </p>
+                <p class="aafter"><span>© 2001-2019</span> <span>新蛋商贸（上海）有限公司</span> <span>版权所有</span> <span><a
+                            href="###" title="上海市互联网准入证书" ref="noBlank" style="color:#484848">沪ICP备:16033615</a></span>
+                </p>
+            </div>
+        </div>
+        <div class="bottombar" style="line-height: 24px;background-color: #f1f1f1;color:#666;">
+            <div class="wraper" style="padding: 20px 0px 20px;">
+                <span style="text-align: center;display: block;">上海网警提示</span>
+                <span
+                    style="text-align: left;display: block;">网络刷单是违法，切莫轻信有返利；网上交友套路多，卖惨要钱需当心；电子红包莫轻点，个人信息勿填写；仿冒客服来行骗，官方核实最重要；招工诈骗有套路，预交费用需谨慎；</span>
+                <span
+                    style="text-align: left;display: block;">低价充值莫轻信，莫因游戏陷套路；连接WIFI要规范，确认安全再连接；抢购车票有章法，确认订单再付款；白条赊购慎使用，提升额度莫轻信；网购预付有风险，正规渠道很重要。</span>
+            </div>
+        </div>
+    </div>
+    <div id="totop">
+        <a href="###"><img class="totop" src="../img/ToTop_Normal.gif" alt=""></a>
+    </div>
+    <script>
+        function css() {
+            if (arguments.length == 2) {
+                //获取：getComputedStyle(ele, false)[cls];
+                return getComputedStyle(arguments[0], false)[arguments[1]];
+            } else if (arguments.length == 3) {
+                //设置行内样式
+                arguments[0].style[arguments[1]] = arguments[2];
+            }
+        }
+        function setCookie(key, value, iDay) {
+            //key:键名   value：键值    iDay：失效时间
+            //document.cookie = 'name=malin;expires=20190527;path=/';
+            var now = new Date();
+            now.setDate(now.getDate() + iDay); //iDay:5天后失效， -1：立即失效
+            document.cookie = key + '=' + value + ';expires=' + now + ';path=/';
+        }
+
+        function getCookie(key) {
+            //获取cookie值
+            var str = document.cookie;//name=malin; psw=123456
+            var arr = str.split('; '); //[name=malin,psw=123456]
+            for (var ele of arr) {
+                var arr2 = ele.split('='); //[name,malin]
+                if (key == arr2[0]) {
+                    return arr2[1];
+                }
+            }
+        }
+
+        function removeCookie(key) {
+            //删除cookie。把这个值变成失效
+            setCookie(key, '', -1); //设置成过去的时间
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../lib/jquery-1.11.0.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+
+<body>
+    <div id="topbar">
+        <div class="wraper topbar">
+            <div class="topnav_left">
+                <ul class="aside">
+                    <li id="qrcode"><a href="###" class="phone">
+                            掌上新蛋</a>
+                        <div class="inner_code">
+                            <div class="code">
+                                <p> 新蛋APP</p>
+                                <img src="../img/qrcode_app.png" width="100" height="100" alt="">
+                                <span>全新APP<br>让购物成为享受</span>
+                            </div>
+                            <div class="code">
+                                <p>新蛋公众号</p>
+                                <img src="../img/qrcode_wechat.jpg" width="100" height="100" alt="">
+                                <span>精彩文章<br>周周更不停</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="bizGroupBuy">
+                            企业客户</a></li>
+                    <li><a href="#" class="kaifang">
+                            入驻 开放平台</a></li>
+                </ul>
+            </div>
+            <div class="topnav_right">
+                <ul class="aside fr">
+                    <li><a href="#">
+                            帮助中心</a></li>
+                    <li class="hasub service"><a href="###" class="oper">
+                            客户服务<s></s></a>
+                        <div class="inner">
+                            <div class="info">
+                                <p class="orange fz14">
+                                    <strong>
+                                        400-820-4400</strong></p>
+                                <strong>
+                                    021-67072699</strong>
+                                <p>
+                                    每天 9:00 - 18:00</p>
+                            </div>
+                            <div class="connect_way">
+                                <div class="common_btn"><a id="common_btn common_blue_btn" href="#" title="在线咨询"
+                                        style="margin-right: 4px;"><span>
+                                            在线咨询</span>
+                                    </a></div>
+                                <div class="common_btn">
+                                    <a id="common_btn common_blue_btn" href="#" title="邮件我们"><span>
+                                            邮件我们</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="topnav_center">
+                <span class="userpanel " id="userpanel" style="display: block;"><a
+                        href="../html/reg.html">注册</a><b>|</b><a href="../html/login.html">登录</a>
+                    <span id="spWelcome" class="welcome">晚上好,欢迎来新蛋购物！</span>
+                </span>
+                <span id="usename1" style="display: none;">
+                    <p id="con">晚上好，欢迎来到新蛋购物！</p>
+                    <p id="quit">退出</p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="top">
+            <div class="banner">
+                <a href="../index.html"><img src="../img/logocn_1213.png" alt=""></a>
+                <span class="title">欢迎登录</span>
+            </div>
+        </div>
+        <div class="login">
+            <div class="wrapper logoin_center">
+                <div class="logoin_l">
+                    <img src="../img/logoin_bg.jpg" alt="">
+                </div>
+                <div class="logoin_r">
+                    <form action="" method="post" id="LoginForm">
+                        <div class="logoin_r_c1">
+                            <div class="logoin_title">
+                                <h2>登录新蛋</h2>
+                                <div class="fr"><a href="../html/reg.html">注册新用户<span class="fts">&gt;&gt;</span></a></div>
+                            </div>
+                            <ul class="logoin_form">
+                                <li class="username">
+                                    <span class="username_icon"></span>
+                                    <input maxlength="50" type="text" class="hasDefaultText hasDefaultTextOn"
+                                        id="usename" placeholder="用户名/已验证手机或邮箱">
+                                    <em class="input_tips ie6png input_usrname1" style="display:none;"
+                                        id="tipName"></em>
+                                </li>
+                                <li class="password">
+                                    <span class="password_icon"></span>
+                                    <input name="pwd" type="password" id="usepwd" maxlength="50" class="">
+                                    <em class="input_tips ie6png input_usrname2" style="display:none;" id="tipPwd"></em>
+                                </li>
+                            </ul>
+                            <div class="logoin_oper">
+                                <a href="###" class="fl">账户安全</a>
+                                <a href="###" class="fr">忘记密码？</a>
+                                <a href="###" class="egg_btns_t2 egg_btns_org" id="lbtns"
+                                    style="color:#FFFFFF"><span>立即登录</span></a>
+                            </div>
+                        </div>
+                        <input type="hidden" id="needcode" name="needcode" value="0">
+                    </form>
+                    <div class="logoin_r_c2">
+                        <div class="otherlogin">
+                            <h3>您还可以使用以下合作伙伴的账户登录新蛋网：
+                                <div class="other">
+                                    <a href="###" title="支付宝" class="AliPayLogon">
+                                        <span class="jinglingtu"></span>
+                                        <p>支付宝</p>
+                                    </a>
+                                    <a href="###" title="QQ" class="TencentQQLogon">
+                                        <span></span>
+                                        <p>QQ</p>
+                                    </a>
+                                    <a href="javascript:void(0);" title="微信" class="WeiXinLogon">
+                                        <span></span>
+                                        <p>微信</p>
+                                    </a>
+                                    <a href="###" title="新浪微博" class="SinaLogon">
+                                        <span></span>
+                                        <p>新浪微博</p>
+                                    </a>
+                                    <a href="###" title="手机支付" class="CmpayLogon">
+                                        <span></span>
+                                        <p>手机支付</p>
+                                    </a>
+                                    <a href="###" title="盛大登录" class="SDOLogon">
+                                        <span></span>
+                                        <p>盛大登录</p>
+                                    </a>
+                                    <a href="###" title="迅雷" class="ThunderLogon">
+                                        <span></span>
+                                        <p>迅雷</p>
+                                    </a>
+                                    <a href="###" title="莆田政府采购登录" class="PuTianLogon">
+                                        <span></span>
+                                        <p>莆田政府采购登录</p>
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class=" wraper index_footer">
+            <div class="footer">
+                <a href="###" ref="noBlank" title="上海工商" class="item2"></a>
+                <a class="item1" ref="noBlank" id="cnnic_url" oncontextmenu="return false;"
+                    onclick="change_CNNIC('cnnic_url')" href="###" title="可信网站"></a>
+                <a href="###" ref="noBlank" class="item3" title="E9WEB15"></a>
+                <a href="###" ref="noBlank" class="item7" title="网站备案信息" style="position:relative;">
+                    <span
+                        style="position: absolute;font-size:1px;text-indent:0px;line-height: normal;bottom: 4px;left: 37px;color: #001b75;font-family: serif;">31010602000303</span></a>
+                <a href="###" ref="noBlank" title="110网监" class="item8"></a>
+                <a href="###" ref="noBlank" title="网络社会征信网" class="item9"></a>
+                <a href="###" ref="noBlank" title="中央网信办" class="item10"></a>
+                <p class="abefore">新蛋集团网站：<a class="ml5" href=" " style="color:#484848">美国新蛋</a><a class="ml10" href=" "
+                        style="color:#484848">中国新蛋</a><a class="ml10" href=" " style="color:#484848">加拿大新蛋</a><a
+                        class="ml10" href="###" style="color:#484848">新蛋软件</a>
+                </p>
+                <p class="aafter"><span>© 2001-2019</span> <span>新蛋商贸（上海）有限公司</span> <span>版权所有</span> <span><a
+                            href="###" title="上海市互联网准入证书" ref="noBlank" style="color:#484848">沪ICP备:16033615</a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function css() {
+            if (arguments.length == 2) {
+                //获取：getComputedStyle(ele, false)[cls];
+                return getComputedStyle(arguments[0], false)[arguments[1]];
+            } else if (arguments.length == 3) {
+                //设置行内样式
+                arguments[0].style[arguments[1]] = arguments[2];
+            }
+        }
+        function setCookie(key, value, iDay) {
+            //key:键名   value：键值    iDay：失效时间
+            //document.cookie = 'name=malin;expires=20190527;path=/';
+            var now = new Date();
+            now.setDate(now.getDate() + iDay); //iDay:5天后失效， -1：立即失效
+            document.cookie = key + '=' + value + ';expires=' + now + ';path=/';
+        }
+
+        function getCookie(key) {
+            //获取cookie值
+            var str = document.cookie;//name=malin; psw=123456
+            var arr = str.split('; '); //[name=malin,psw=123456]
+            for (var ele of arr) {
+                var arr2 = ele.split('='); //[name,malin]
+                if (key == arr2[0]) {
+                    return arr2[1];
+                }
+            }
+        }
+
+        function removeCookie(key) {
+            //删除cookie。把这个值变成失效
+            setCookie(key, '', -1); //设置成过去的时间
+        }
+    </script>
+</body>
+
+</html>
