@@ -20,5 +20,6 @@
     }
     // echo 'ok';
 	// $res->close();//关闭结果集
-	// $conn->close();//关闭数据库连接
+    // $conn->close();//关闭数据库连接
+    $conn->query("SET NAMES 'UTF8'");
 ?>
