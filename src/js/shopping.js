@@ -87,10 +87,10 @@ $(function () {
 		if(len == total) {
             //全都勾选了
             // console.log(245)
-            $('.whole_check').prop('checked',true);
+            $('#all').prop('checked',true);
            
 		}else{
-            $('.whole_check').prop('checked',false);
+            $('#all').prop('checked',false);
         }
         all();
         //刷新总数量和总价格

@@ -20,7 +20,7 @@ $(function () {
     init();
     function create(str) {
         arr = JSON.parse(str);
-        // console.log(arr)
+       console.log(str)
 
         var res = arr.data.map(function (item) {
             var pic = item.pic;
